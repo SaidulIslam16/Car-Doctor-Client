@@ -47,7 +47,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h2 className="text-5xl font-bold text-center">Book Our {title} Service</h2>
+            <h2 className="text-5xl font-bold text-center">Book Our <span className="text-red-500">{title}</span> Service</h2>
 
             {/* form */}
             <form onSubmit={handleBookService} className="w-2/3 mx-auto my-12">
@@ -62,7 +62,7 @@ const Checkout = () => {
                         <label className="label">
                             <span className="label-text">Date</span>
                         </label>
-                        <input type="date" name="date" className="input input-bordered" />
+                        <input type="date" required name="date" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
